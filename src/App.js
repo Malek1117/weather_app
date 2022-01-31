@@ -7,7 +7,7 @@ function App() {
 
   const handleSearch = () => {
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=a5fddd628a5946429c9111859223101&q=${search}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=a5fddd628a5946429c9111859223101&q=${search}&aqi=no`
     )
       .then((res) => res.json())
       .then((data) => {
